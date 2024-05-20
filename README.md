@@ -7,25 +7,30 @@
 # 项目结构
 ```
 .
+├── conf
+│   ├── mysql.yaml mysql配置文件
+│   └── redis.yaml redis配置文件
 ├── controller
-│   └── Controller.go //增删改查功能的实现
+│   └── Controller.go 主要业务逻辑
 ├── dao
-│   ├── mysql
-│   │   ├── message.go   //mysql操作
-│   │   ├── message.sql  //mysql建表语句
-│   │   ├── mysql.go     //mysql初始化连接
-│   │   └── mysql.yaml   //mysql配置文件
-│   └── redis
-│       ├── message.go   //redis操作
-│       ├── redis.go     //redis初始化连接
-│       └── redis.yaml   //redis配置文件
+│   ├── mysql
+│   │   ├── message.go 数据库操作
+│   │   ├── message.sql 建立数据库表
+│   │   └── mysql.go 数据库连接
+│   └── redis
+│       ├── message.go redis操作
+│       └── redis.go redis连接
+├── docker-compose.yaml docker-compose配置文件
+├── Dockerfile
 ├── go.mod
 ├── go.sum
-├── main.go              //程序入口
+├── init.sql 初始化数据库
+├── main.go 入口文件
 ├── model
-│   └── Model.go         //数据模型
+│   └── Model.go 数据模型
+├── README.md
 └── router
-    └── router.go        //路由
+    └── router.go 路由
 ```
 
 # 项目运行
