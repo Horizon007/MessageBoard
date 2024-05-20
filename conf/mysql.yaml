@@ -1,5 +1,5 @@
-host: 192.168.88.137
+host: mysql8
 username: "root"
 password: "123456"
 dbname: messageboard
-port: 3310
+port: 3306

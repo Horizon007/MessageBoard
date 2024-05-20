@@ -18,7 +18,7 @@ type conf struct {
 }
 
 func (c *conf) getConf() *conf {
-	yamlFile, err := os.ReadFile("dao/redis/redis.yaml")
+	yamlFile, err := os.ReadFile("./conf/redis.yaml")
 	if err != nil {
 		fmt.Println(err.Error())
 	}

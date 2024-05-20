@@ -21,7 +21,7 @@ type conf struct {
 
 func (c *conf) getConf() *conf {
 	//获取yaml配置文件
-	yamlFile, err := os.ReadFile("dao/mysql/mysql.yaml")
+	yamlFile, err := os.ReadFile("./conf/mysql.yaml")
 
 	//如果读取文件失败，打印错误信息
 	if err != nil {
