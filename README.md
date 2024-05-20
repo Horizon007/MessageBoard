@@ -1,6 +1,6 @@
-> @Name:王继远
-> @Date: 2024-05-20
-> @Target:edgeness笔试
+@Name:王继远  
+@Date: 2024-05-20  
+@Target:edgeness笔试
 
 # 介绍
 采用go+gin+mysql+redis实现的一个简单留言板，实现了留言的增删改查功能。
